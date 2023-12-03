@@ -3,8 +3,8 @@
 
 #define TIME_TO_SLEEP 60e6
 
-const char* ssid = "Visitas UV";
-const char* password = "uvalparaiso2019";
+const char* ssid = "RedWifi";
+const char* password = "pass";
 int contador = 0;
 
 
@@ -65,7 +65,7 @@ void realizarGET() {
     wifiData = urlencode(wifiData);
     
     // Construye la URL completa
-    String serverPath = "https://sigem-uv.cl/tagwifi2/get.php?data=" + wifiData;
+    String serverPath = "https://servidos.com/get.php?data=" + wifiData;
 
     // Crea un objeto HTTPClient
     HTTPClient http;
